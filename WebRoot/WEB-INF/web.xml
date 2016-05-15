@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.CheckCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResetPwdServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.ResetPwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadAvatarServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.UploadAvatarServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>UploadContactServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.UploadContactServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>GetContactServlet</servlet-name>
+    <servlet-class>com.wjustudio.user.control.GetContactServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <url-pattern>/checkCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResetPwdServlet</servlet-name>
+    <url-pattern>/resetPwdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadAvatarServlet</servlet-name>
+    <url-pattern>/uploadAvatarServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>UploadContactServlet</servlet-name>
+    <url-pattern>/uploadContactServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>GetContactServlet</servlet-name>
+    <url-pattern>/getContactServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
